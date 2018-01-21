@@ -11,11 +11,11 @@
     <!-- Portfolio Item Row -->
     <div class="row">
 
-        <div class="col-md-8">
+        <div class="col-md-6">
             <img class="img-fluid" src="{{url('upload/product/'.$data->gambar)}}" alt="">
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <h3 class="my-3">Product Description</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque
                 urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies,
