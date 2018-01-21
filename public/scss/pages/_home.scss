@@ -1,0 +1,74 @@
+//lib
+@import "../libs/colors";
+@import "../libs/images";
+//component
+@import "../components/table";
+@import "../components/button";
+@import "../partials/navbar";
+//utility
+@import "compass/css3/border-radius";
+
+h2 {
+  color: $color-primary;
+  text-align: center;
+}
+
+.btn {
+  &.btn-primary {
+    background-color: $color-default;
+    border: none;
+    @include border-radius(4px, 4px);
+  }
+}
+
+.nav-list {
+  li {
+    background-color: #eeeeee;
+    a {
+      color: #666666;
+      border-bottom: 1px solid #bbbbbb;
+    }
+    a:hover {
+      background-color: #cccccc;
+    }
+  }
+}
+
+.page-header {
+  background-color: $color-primary;
+  padding: 10px;
+}
+
+.c-price {
+  padding: 10px;
+  font-size: 13px;
+  & a {
+    text-decoration: none;
+  }
+  & .price {
+    padding: 0px;
+    margin-top: 10px;
+    color: $color-primary;
+  }
+  & .name {
+    padding: 0px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: $color-dark-one;
+  }
+}
+.c-price:hover{
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0, .65);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0, .65);
+  box-shadow: 0 0 10px rgba(0,0,0, .65);
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.t-product {
+  padding: 10px;
+  margin-top: 10px;
+}
