@@ -1,6 +1,6 @@
 @extends('layouts._main')
 @section('title')
-    Renta.com - Tentang Kami
+    Renta.com - All Products
 @endsection
 @section('body')
     <!-- Related Rented Row -->

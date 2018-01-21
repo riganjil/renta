@@ -11,28 +11,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
-            <ul class="nav flex-column" id="nav_side">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Ubah profil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Poin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pesanan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Keranjang</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pembelian</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Keranjang</a>
-                </li>
-            </ul>
-        </div>
+        @include('partials.account._sidebar')
         <div class="col-md-9">
             <ul class="nav nav-tabs" id="proTab" role="tablist">
                 <li class="nav-item">

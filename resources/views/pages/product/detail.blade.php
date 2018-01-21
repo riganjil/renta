@@ -1,6 +1,6 @@
 @extends('layouts._main')
 @section('title')
-    Renta.com - Aman dan nyaman
+    Renta.com - Product Detail
 @endsection
 @section('body')
     <!-- Portfolio Item Heading -->
