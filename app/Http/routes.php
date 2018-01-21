@@ -27,14 +27,13 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::get('category/{id}', 'ProductController@list_category');
 
-Route::group(['prefix' => 'product'], function (){
-
+Route::group(['prefix' => 'account'], function () {
+    Route::get('/', 'AccountController@index');
 });
 
-Route::group(['prefix' => 'auth'], function (){
-   Route::get('login', 'AuthController@login');
-   Route::post('login', 'AuthController@aksi_login');
-   Route::get('logout', 'AuthController@logout');
+Route::group(['prefix' => 'auth'], function () {
+    Route::get('login', 'AuthController@login');
+    Route::post('login', 'AuthController@aksi_login');
+    Route::get('logout', 'AuthController@logout');
 });

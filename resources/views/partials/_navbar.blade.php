@@ -29,8 +29,15 @@
                     <a class="nav-link" href="{{url('product')}}">Products</a>
                 </li>
                 @if(Auth::check())
-                    <li class="nav-item {{ Request::path() == 'login' ? 'active' : '' }}">
-                        <a class="nav-link" href="{{url('auth/logout')}}">Logout</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoryLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{Auth::User()->username}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="categoryLink">
+                                <a class="dropdown-item" href="{{url('account')}}">Profile</a>
+                                <a class="dropdown-item" href="{{url('auth/logout')}}">Logout</a>
+                        </div>
                     </li>
                 @else
                     <li class="nav-item {{ Request::path() == 'login' ? 'active' : '' }}">
