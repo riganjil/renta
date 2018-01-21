@@ -21,7 +21,7 @@ class Product extends Model
 
     public static function getProduct()
     {
-        return self::selectRaw('produk.kode_produk, nama_produk, gambar')
+        return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
             ->JoinGambar()
             ->where('is_available', 'Y')
             ->groupBy('produk.kode_produk')
@@ -30,7 +30,7 @@ class Product extends Model
 
     public static function getProductByCategory($id)
     {
-        return self::selectRaw('produk.kode_produk, nama_produk, gambar')
+        return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
             ->JoinCategory()
             ->where('is_available', 'Y')
             ->where('produk_kategori.kode_kategori', $id)

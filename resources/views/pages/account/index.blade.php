@@ -38,22 +38,18 @@
                 <div class="form-group has-success">
                     <label class="form-control-label" for="">Nama Lengkap</label>
                     <input type="text" class="form-control form-control-success" value="{{Auth::User()->nama_depan.' '.Auth::User()->nama_belakang}}" readonly>
-                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
                 </div>
                 <div class="form-group has-success">
-                    <label class="form-control-label" for="">Phone</label>
+                    <label class="form-control-label" for="">Telepon</label>
                     <input type="text" class="form-control form-control-success" value="{{Auth::User()->telepon}}"  readonly>
-                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
                 </div>
                 <div class="form-group has-success">
                     <label class="form-control-label" for="">Email</label>
                     <input type="text" class="form-control form-control-success" value="{{Auth::User()->email}}"  readonly>
-                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
                 </div>
                 <div class="form-group has-success">
                     <label class="form-control-label" for="">Username</label>
                     <input type="text" class="form-control form-control-success" value="{{Auth::User()->username}}"  readonly>
-                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
                 </div>
                 <div class="form-group has-success">
                     <button class="btn btn-primary">Ubah</button>

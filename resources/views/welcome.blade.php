@@ -65,7 +65,7 @@
         @endfor
         @foreach($product as $row)
             <div class="col-md-3 col-sm-6 mb-4 c-price">
-                <a href="#">
+                <a href="{{url('product/'. $row->nama_produk_seo)}}">
                     <img class="img img-fluid" src="{{url('upload/product/'.$row->gambar)}}" alt="">
                     <div class="name">{{$row->nama_produk}}</div>
                     <div class="price">Rp 125.000 / jam</div>

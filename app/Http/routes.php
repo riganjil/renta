@@ -15,25 +15,29 @@ use Illuminate\Support\Facades\Hash;
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/about', function () {
-    return view('pages.about');
+Route::group(['prefix' => 'product'], function () {
+    Route::get('/', 'ProductController@index');
+    Route::get('/{id}', 'ProductController@detail');
 });
-
-Route::get('/product', function () {
-    return view('pages.product');
-});
-
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
 
 Route::group(['prefix' => 'account'], function () {
     Route::get('/', 'AccountController@index');
+});
+
+Route::group(['prefix' => 'category'], function () {
+    Route::get('/{id}', 'ProductController@list_category');
 });
 
 Route::group(['prefix' => 'auth'], function () {
     Route::get('login', 'AuthController@login');
     Route::post('login', 'AuthController@aksi_login');
     Route::get('logout', 'AuthController@logout');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/about', function () {
+    return view('pages.about');
 });
