@@ -16,9 +16,10 @@ class ProductController extends Controller
         return view('pages.product.index');
     }
 
-    public function detail()
+    public function detail($id)
     {
-        return view('pages.product.detail');
+        $data = Product::getProductDetail($id);
+        return view('pages.product.detail', compact('data'));
     }
 
     public function list_category($id)

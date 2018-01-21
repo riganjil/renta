@@ -28,6 +28,18 @@ class Product extends Model
             ->get();
     }
 
+
+    public static function getProductDetail($id)
+    {
+        return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
+            ->JoinGambar()
+            ->where('is_available', 'Y')
+            ->where('nama_produk_seo', $id)
+            ->groupBy('produk.kode_produk')
+            ->first();
+    }
+
+
     public static function getProductByCategory($id)
     {
         return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
