@@ -26,7 +26,7 @@
     @yield('body')
 </div>
 <!-- /.container -->
-@include('partials.auth._footer')
+{{--@include('partials.auth._footer')--}}
 
 <!-- Bootstrap core JavaScript -->
 <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>

@@ -34,6 +34,7 @@ Route::group(['prefix' => 'auth'], function () {
     Route::get('logout', 'AuthController@logout');
 
     Route::get('register', 'AuthController@register');
+    Route::post('register', 'AuthController@aksi_register');
 });
 
 Route::get('/contact', function () {
