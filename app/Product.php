@@ -8,6 +8,11 @@ class Product extends Model
 {
     protected $table = 'produk';
 
+    public function scopeSelectMain($query)
+    {
+        return $query->selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, deskripsi, gambar');
+    }
+
     public function scopeJoinGambar($query)
     {
         return $query->join('produk_gambar', 'produk_gambar.kode_produk', '=', 'produk.kode_produk');
@@ -16,12 +21,11 @@ class Product extends Model
     public function scopeJoinCategory($query)
     {
         $query->JoinGambar()->join('produk_kategori', 'produk_kategori.kode_kategori', '=', 'produk.kode_kategori');
-//        return $query->join('produk_kategori', 'produk_kategori.kode_kategori', '=', 'produk.kode_kategori');
     }
 
     public static function getProduct()
     {
-        return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
+        return self::SelectMain()
             ->JoinGambar()
             ->where('is_available', 'Y')
             ->groupBy('produk.kode_produk')
@@ -31,7 +35,7 @@ class Product extends Model
 
     public static function getProductDetail($id)
     {
-        return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
+        return self::SelectMain()
             ->JoinGambar()
             ->where('is_available', 'Y')
             ->where('nama_produk_seo', $id)
@@ -42,7 +46,7 @@ class Product extends Model
 
     public static function getProductByCategory($id)
     {
-        return self::selectRaw('produk.kode_produk, nama_produk, nama_produk_seo, gambar')
+        return self::SelectMain()
             ->JoinCategory()
             ->where('is_available', 'Y')
             ->where('produk_kategori.kode_kategori', $id)

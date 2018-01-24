@@ -18,6 +18,7 @@ Route::get('/', 'HomeController@index');
 Route::group(['prefix' => 'product'], function () {
     Route::get('/', 'ProductController@index');
     Route::get('/{id}', 'ProductController@detail');
+    Route::get('/{id}/sewa', 'ProductController@detail_sewa');
 });
 
 Route::group(['prefix' => 'account'], function () {

@@ -23,6 +23,12 @@ class ProductController extends Controller
         return view('pages.product.detail', compact('data'));
     }
 
+    public function detail_sewa($id)
+    {
+        $data = Product::getProductDetail($id);
+        return view('pages.product.detail-sewa', compact('data'));
+    }
+
     public function list_category($id)
     {
         $kode_kategori = Category::where('nama_kategori_seo', $id)->first()->kode_kategori;
