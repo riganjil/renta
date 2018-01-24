@@ -32,7 +32,6 @@
 <!-- Bootstrap core JavaScript -->
 <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{url('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
 @yield('foot')
 
 </body>

@@ -35,7 +35,7 @@
                             {{Auth::User()->username}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="categoryLink">
-                                <a class="dropdown-item" href="{{url('account')}}">Profile</a>
+                                <a class="dropdown-item" href="{{url('account')}}">Logout</a>
                                 <a class="dropdown-item" href="{{url('auth/logout')}}">Logout</a>
                         </div>
                     </li>
