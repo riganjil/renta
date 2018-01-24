@@ -22,6 +22,7 @@ Route::group(['prefix' => 'product'], function () {
 
 Route::group(['prefix' => 'account'], function () {
     Route::get('/', 'AccountController@index');
+    Route::post('/change-pass', 'AccountController@change_pass');
 });
 
 Route::group(['prefix' => 'category'], function () {

@@ -46,20 +46,21 @@
                     </form>
                 </div>
                 <div class="tab-pane fade" id="t_pass" role="tabpanel" aria-labelledby="profile-tab">
-                    <form action="">
+                    <form action="{{url('account/change-pass')}}" method="post">
+                        {{csrf_field()}}
                         <div class="form-group has-success">
                             <label class="form-control-label" for="">Password Lama</label>
-                            <input type="password" class="form-control form-control-success">
+                            <input type="password" name="password" class="form-control form-control-success">
                         </div>
 
                         <div class="form-group has-success">
                             <label class="form-control-label" for="">Password Baru</label>
-                            <input type="password" class="form-control form-control-success">
+                            <input type="password" name="password_baru" class="form-control form-control-success">
                         </div>
 
                         <div class="form-group has-success">
                             <label class="form-control-label" for="">Konfirmasi Password Baru</label>
-                            <input type="password" class="form-control form-control-success">
+                            <input type="password" name="password_baru_konfirmasi" class="form-control form-control-success">
                         </div>
 
                         <div class="form-group has-success">
