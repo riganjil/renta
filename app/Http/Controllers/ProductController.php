@@ -13,7 +13,8 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view('pages.product.index');
+        $data = Product::getProduct();
+        return view('pages.product.index', compact('data'));
     }
 
     public function detail($id)

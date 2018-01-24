@@ -24,6 +24,12 @@ class AuthController extends Controller
         }
     }
 
+
+    public function register()
+    {
+        return view('pages.auth.register');
+    }
+
     public function logout()
     {
         Auth::logout();
