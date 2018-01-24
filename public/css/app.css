@@ -115,17 +115,17 @@
 
 /* line 8, ../scss/components/_button.scss */
 .ri-btn-primary {
-  background-color: #e85257;
+  background-color: #FC5830;
   border: none; }
 
 /* line 13, ../scss/components/_button.scss */
 .ri-btn-default {
-  background-color: #e85257;
+  background-color: #FC5830;
   border: none; }
 
 /* line 19, ../scss/components/_button.scss */
 .btn.btn-primary {
-  background-color: #e85257;
+  background-color: #FC5830;
   border: none; }
 
 /* line 3, ../scss/partials/_navbar.scss */
@@ -136,27 +136,42 @@
 .bg-clear {
   background-color: #ffffff; }
 
-/* line 14, ../scss/partials/_navbar.scss */
+/* line 11, ../scss/partials/_navbar.scss */
+.bg-prima {
+  background-color: #FC5830; }
+
+/* line 18, ../scss/partials/_navbar.scss */
 #nav_top ul li a {
   font-size: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 22, ../scss/partials/_navbar.scss */
+/* line 26, ../scss/partials/_navbar.scss */
 #nav_bottom {
   border-top: 1px solid #e2e6ea; }
-  /* line 24, ../scss/partials/_navbar.scss */
+  /* line 28, ../scss/partials/_navbar.scss */
   #nav_bottom .title {
     color: #2e3436;
     font-size: 15px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 32, ../scss/partials/_navbar.scss */
+/* line 36, ../scss/partials/_navbar.scss */
 #foot-auth a {
   font-size: 15px; }
 
+/* line 42, ../scss/partials/_navbar.scss */
+#nav_side li {
+  padding-left: 0px;
+  margin-left: 0px; }
+  /* line 45, ../scss/partials/_navbar.scss */
+  #nav_side li a {
+    padding-left: 0px;
+    font-size: 13px;
+    color: #FC5830;
+    text-align: left; }
+
 /* line 11, ../scss/pages/_home.scss */
 h2 {
-  color: #e85257;
+  color: #FC5830;
   text-align: center; }
 
 /* line 17, ../scss/pages/_home.scss */
@@ -180,7 +195,7 @@ h2 {
 
 /* line 37, ../scss/pages/_home.scss */
 .page-header {
-  background-color: #e85257;
+  background-color: #FC5830;
   padding: 10px; }
 
 /* line 42, ../scss/pages/_home.scss */
@@ -194,7 +209,7 @@ h2 {
   .c-price .price {
     padding: 0px;
     margin-top: 10px;
-    color: #e85257; }
+    color: #FC5830; }
   /* line 53, ../scss/pages/_home.scss */
   .c-price .name {
     padding: 0px;

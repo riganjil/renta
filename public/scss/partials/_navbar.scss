@@ -8,6 +8,10 @@
   background-color: #ffffff;
 }
 
+.bg-prima{
+  background-color: $color-primary;
+}
+
 #nav_top {
   & ul {
     & li {
@@ -36,8 +40,13 @@
 
 #nav_side {
   li {
+    padding-left: 0px;
+    margin-left: 0px;
     a {
-      //color: #aaaaaa;
+      padding-left: 0px;
+      font-size: 13px;
+      color: $color-primary;
+      text-align: left;
     }
   }
 }

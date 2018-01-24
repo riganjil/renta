@@ -13,7 +13,7 @@
     <div class="row">
         @include('partials.account._sidebar')
         <div class="col-md-9">
-            <ul class="nav nav-tabs" id="proTab" role="tablist">
+            <ul class="nav nav-tabs mb-4" id="proTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#t_pro" role="tab" aria-controls="home" aria-selected="true">Profil</a>
                 </li>

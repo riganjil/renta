@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="nav_top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-prima fixed-top" id="nav_top">
     <div class="container">
         <a class="navbar-brand" href="{{url('/')}}">Renta.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -35,7 +35,7 @@
                             {{Auth::User()->username}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="categoryLink">
-                                <a class="dropdown-item" href="{{url('account')}}">Logout</a>
+                                <a class="dropdown-item" href="{{url('account')}}">Profile</a>
                                 <a class="dropdown-item" href="{{url('auth/logout')}}">Logout</a>
                         </div>
                     </li>
